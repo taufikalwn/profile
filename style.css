@@ -1,0 +1,231 @@
+/* Color Variables */
+:root {
+    --dark: #213448;
+    --teal: #547792;
+    --light-blue: #94B4C1;
+    --cream: #EAE0CF;
+}
+
+body {
+    color: var(--dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: transparent !important;
+    box-shadow: none;
+    padding: 15px 0 !important;
+}
+
+.navbar .container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px 20px !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    max-width: 95%;
+}
+
+.navbar-brand {
+    color: var(--dark) !important;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    color: var(--dark) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--teal);
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: var(--teal) !important;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--teal), var(--dark));
+    color: var(--cream);
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero .lead {
+    color: var(--light-blue);
+}
+
+.hero img {
+    width: 120px;
+    height: 120px;
+    border-color: var(--cream) !important;
+}
+
+
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--teal) !important;
+    border-color: var(--teal) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark) !important;
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    color: var(--teal) !important;
+    border-color: var(--teal) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--teal) !important;
+    color: var(--cream) !important;
+}
+
+/* Section Titles */
+section h2 {
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--teal);
+    margin: 15px auto 0;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+/* About Section */
+#about {
+    background-color: var(--cream);
+}
+
+/* Skills Cards */
+#skills .card {
+    transition: transform 0.3s;
+    border: none;
+}
+
+#skills .card:hover {
+    transform: translateY(-8px);
+}
+
+#skills i {
+    color: var(--teal);
+}
+
+#skills .badge {
+    background-color: var(--teal) !important;
+}
+
+/* Projects Section */
+#projects {
+    background-color: var(--cream);
+}
+
+#projects .card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+#projects .card:hover {
+    transform: translateY(-8px);
+}
+
+#projects img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contact Form */
+#experience {
+    background-color: var(--cream);
+}
+
+#experience .card {
+    border: none !important;
+    box-shadow: 0 2px 8px rgba(33,52,72,0.1);
+}
+
+/* Contact Form */
+#contactForm {
+    background-color: var(--cream);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.form-control {
+    border: 1px solid var(--light-blue);
+}
+
+.form-control:focus {
+    border-color: var(--teal);
+    box-shadow: 0 0 0 0.2rem rgba(84, 119, 146, 0.25);
+}
+
+#contact .card {
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#contact .card:hover {
+    background-color: rgba(84, 119, 146, 0.1);
+}
+
+#contact i {
+    color: var(--teal);
+}
+
+#contact a {
+    color: var(--teal);
+    text-decoration: none;
+}
+
+#contact .row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark);
+    border-top: 3px solid var(--teal);
+    color: var(--light-blue);
+}
+
+footer a {
+    color: var(--cream);
+}
+
+footer a:hover {
+    color: var(--light-blue);
+}

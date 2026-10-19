@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi - Taufik Alwan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fa-solid fa-user me-2"></i>Taufik 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Pengalaman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero py-5 text-white position-relative" 
+        style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1779928939149-0475c4b0f679?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D') center/cover no-repeat;">
+        <div class="container text-center">
+            <div class="mb-4">
+                <img src="https://images.unsplash.com/photo-1757620765404-a1ee66df5e27?w=300&auto=format&fit=crop&q=80" 
+                    alt="Foto Profil Taufik Alwan" 
+                    class="text-white rounded-circle border border-3 border-primary shadow-sm object-fit-cover" 
+                    width="160" 
+                    height="160">
+            </div>
+            <h1 class="fw-bold mb-2">Taufik Alwan</h1>
+            <p class="mb-2 lead">Web Developer & Data Entushiast</p>
+
+            <div class="d-flex justify-content-center gap-2">
+                <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-3 shadow-sm">Hubungi Saya</a>
+                <a href="#about" class="btn btn-primary btn-lg rounded-pill px-3">Pelajari Lebih</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <!-- <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Tentang Saya</h2>
+            <div class="row align-items-center">
+                <!-- Kolom Gambar -->
+                <!-- <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                    <img src="https://images.unsplash.com/photo-1757620765404-a1ee66df5e27?w=300&auto=format&fit=crop&q=80" 
+                        alt="Tentang" 
+                        class="img-fluid rounded mx-auto d-block">
+                </div>
+                <!-- Kolom Teks -->
+                <!-- <div class="col-lg-6 text-center text-lg-start">
+                    <p class="mb-2">Saya seorang web developer muda dengan passion menciptakan solusi digital yang inovatif dan user-friendly.</p>
+                    <p class="mb-2">Berpengalaman dalam mengembangkan website responsif menggunakan HTML, CSS, JavaScript, dan Bootstrap.</p>
+                    <p class="mb-0">Selalu antusias belajar teknologi terbaru dan berkontribusi dalam komunitas programmer.</p>
+                </div>
+            </div>
+        </div>
+    </section> --> 
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <!-- Judul Section -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-2">Tentang Saya</h2>
+            </div>
+
+            <div class="row align-items-center g-4">
+                <!-- Kolom Gambar dengan Framing & Badge -->
+                <div class="col-lg-5 text-center">
+                    <div class="position-relative d-inline-block">
+                        <img src="https://images.unsplash.com/photo-1757620765404-a1ee66df5e27?w=500&auto=format&fit=crop&q=80" 
+                            alt="Tentang Taufik Alwan" 
+                            class="img-fluid rounded-4 shadow-lg mx-auto d-block object-fit-cover"
+                            style="max-height: 400px; width: 100%;">
+                    </div>
+                </div>
+
+                <!-- Kolom Teks & Stats -->
+                <div class="col-lg-7 text-center text-lg-start ps-lg-4 mt-5 mt-lg-0">
+                    <h3 class="fw-bold mb-3">Mengubah Ide Menjadi Solusi Digital yang Impactful</h3>
+                    
+                    <p class="text-secondary lead fs-6 mb-3">
+                        Halo! Saya adalah seorang <strong>Web Developer & Data Enthusiast</strong> yang berfokus pada pengembangan aplikasi web responsif, berkinerja tinggi, dan mudah digunakan oleh pengguna (*user-friendly*).
+                    </p>
+                    <p class="text-secondary fs-6 mb-4">
+                        Memiliki latar belakang yang kuat dalam analisis data dan pemrograman web, saya senang menggabungkan logika struktur data dengan desain antarmuka modern untuk menyelesaikan berbagai tantangan bisnis.
+                    </p>
+
+                    <!-- Ringkasan Statistik Singkat -->
+                    <div class="row g-3 mb-4 text-center">
+                        <div class="col-4">
+                            <div class="p-3 bg-white rounded-3 border shadow-sm">
+                                <h4 class="fw-bold mb-0">2+</h4>
+                                <small class="text-muted">Tahun Pengalaman</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3 bg-white rounded-3 border shadow-sm">
+                                <h4 class="fw-bold mb-0">15+</h4>
+                                <small class="text-muted">Proyek Selesai</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3 bg-white rounded-3 border shadow-sm">
+                                <h4 class="fw-bold mb-0">100%</h4>
+                                <small class="text-muted">Komitmen</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tombol CTA -->
+                    <a href="#contact" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm fw-semibold">
+                        <i class="fas fa-paper-plane me-2"></i>Mari Diskusi Proyek
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Keahlian</h2>
+            <div class="row g-3">
+                <div class="col-6 col-md-4">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-code fa-2x mb-3"></i>
+                            <h5>Frontend</h5>
+                            <p class="small">HTML, CSS, JavaScript, Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-database fa-2x mb-3"></i>
+                            <h5>Backend</h5>
+                            <p class="small">PHP, Node.js, MySQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tools fa-2x mb-3"></i>
+                            <h5>Tools</h5>
+                            <p class="small">Git, VS Code, Figma</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-bar fa-2x mb-3"></i>
+                            <h5>Data & Analytics</h5>
+                            <p class="small">Python, Pandas, Scikit-Learn, SQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cloud fa-2x mb-3"></i>
+                            <h5>DevOps & Cloud</h5>
+                            <p class="small">Docker, Linux, Vercel, GitHub Actions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-users fa-2x mb-3"></i>
+                            <h5>Soft Skills</h5>
+                            <p class="small">Problem Solving, Team Work, Scrum/Agile, Communication</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Proyek</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card border-0">
+                        <img src="https://images.unsplash.com/photo-1733503711059-acde98cd7fdf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" class="card-img-top" alt="Proyek 1">
+                        <div class="card-body">
+                            <h5>E-Commerce Platform</h5>
+                            <p class="small">Platform belanja online dengan fitur checkout dan payment gateway.</p>
+                            <span class="badge me-1">HTML</span>
+                            <span class="badge me-1">CSS</span>
+                            <span class="badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card border-0">
+                        <img src="https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" class="card-img-top" alt="Proyek 2">
+                        <div class="card-body">
+                            <h5>Dashboard Analytics</h5>
+                            <p class="small">Dashboard interaktif untuk visualisasi data real-time.</p>
+                            <span class="badge me-1">HTML</span>
+                            <span class="badge me-1">CSS</span>
+                            <span class="badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card border-0">
+                        <img src="https://images.unsplash.com/photo-1697545806200-a351283a8047?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" class="card-img-top" alt="Proyek 3">
+                        <div class="card-body">
+                            <h5>Inventory Management System</h5>
+                            <p class="small">Aplikasi berbasis PWA sederhana untuk optimasi pencatatan stok barang menggunakan RDBMS MySQL</p>
+                            <span class="badge me-1">HTML</span>
+                            <span class="badge me-1">CSS</span>
+                            <span class="badge me-1">JavaScript</span>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card border-0">
+                        <img src="https://images.unsplash.com/photo-1787839227786-17f3149942a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" class="card-img-top" alt="Proyek 4">
+                        <div class="card-body">
+                            <h5>Customer Relationship Management</h5>
+                            <p class="small">Aplikasi berbasis PWA untuk optimasi pencatatan data customer brand F&B menggunakan RDBMS MySQL</p>
+                            <span class="badge me-1">HTML</span>
+                            <span class="badge me-1">CSS</span>
+                            <span class="badge me-1">JavaScript</span>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Pengalaman</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- Experience 1 -->
+                    <div class="card border-0 mb-3">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-briefcase fa-2x" style="color: var(--teal);"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h5 class="mb-1">Junior Web Developer</h5>
+                                    <p class="mb-1" style="color: var(--teal); font-weight: 600;">PT. Tech Indonesia</p>
+                                    <p class="mb-2 small" style="color: var(--light-blue);">Jan 2022 - Sekarang</p>
+                                    <p class="small">Mengembangkan website responsif menggunakan HTML, CSS, JavaScript dan Bootstrap. Berkolaborasi dengan tim design dan backend untuk menghasilkan produk berkualitas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="card border-0 mb-3">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-briefcase fa-2x" style="color: var(--teal);"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h5 class="mb-1">Freelance Web Developer</h5>
+                                    <p class="mb-1" style="color: var(--teal); font-weight: 600;">Self-employed</p>
+                                    <p class="mb-2 small" style="color: var(--light-blue);">Jun 2021 - Des 2021</p>
+                                    <p class="small">Membuat website custom untuk klien dari berbagai industri. Menangani project dari konsep hingga deployment dan maintenance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-graduation-cap fa-2x" style="color: var(--teal);"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h5 class="mb-1">Bootcamp Web Development</h5>
+                                    <p class="mb-1" style="color: var(--teal); font-weight: 600;">Coding Institute</p>
+                                    <p class="mb-2 small" style="color: var(--light-blue);">Jan 2021 - Mei 2021</p>
+                                    <p class="small">Menyelesaikan program intensive bootcamp dengan fokus pada full-stack web development menggunakan berbagai teknologi modern.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light";>
+        <div class="container">
+            <h2 class="text-center mb-4">Hubungi Saya</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="row mb-4 g-3">
+                        <div class="col-6">
+                            <div class="card border-0 text-center">
+                                <div class="card-body">
+                                    <i class="fa-brands fa-instagram fa-2x mb-2"></i>
+                                    <h6>Instagram</h6>
+                                    <a href="https://www.instagram.com/taufikalwn/" class="small">@taufikalwn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 text-center">
+                                <div class="card-body">
+                                    <i class="fas fa-phone fa-2x mb-2"></i>
+                                    <h6>Telepon</h6>
+                                    <a href="https://wa.link/pjcnj9" class="small">+62 895-8095-30001</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="contactForm">
+                        <div class="mb-2">
+                            <input type="text" class="form-control" id="name" placeholder="Nama" required>
+                        </div>
+                        <div class="mb-2">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" rows="4" placeholder="Pesan" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 text-center text-white">
+        <div class="container">
+            <p class="mb-1">© 2026 Taufik Alwan</p>
+            <div class="mb-2">
+                <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
